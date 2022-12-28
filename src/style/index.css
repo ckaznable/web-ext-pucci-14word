@@ -11,11 +11,9 @@
 }
 
 .__pucci_14_word_cmoon {
-  top: none !important;
-  top: unset !important;
-  bottom: 0;
+  transform: translateY(10000px);
   animation-name: __pucci_cmoon;
-  animation-duration: 1.6s;
+  animation-duration: 3.5s;
   opacity: 1;
 }
 
@@ -57,7 +55,6 @@
   }
 
   100% {
-    bottom: 0;
-    top: unset;
+    transform: translateY(10000px);
   }
 }
