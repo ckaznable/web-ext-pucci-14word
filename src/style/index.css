@@ -1,0 +1,31 @@
+.__pucci_14_word {
+  font-size: 41px;
+  position: fixed;
+  z-index: 99999999;
+  transition: 0.511s;
+}
+
+.__pucci_14_word_leave {
+  transform: translateX(20%);
+  opacity: 0;
+}
+
+.__pucci_14_word_last {
+  transition: none !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+.__pucci_14_word_last_finaly {
+  animation-name: __pucci_himitsunokotei;
+  animation-duration: 1.6s;
+  font-size: 82px;
+}
+
+@keyframes __pucci_himitsunokotei {
+  0%   {font-size: 41px;}
+  35%  {font-size: 120px;}
+  70%  {font-size: 72px;}
+  100% {font-size: 82px;}
+}

@@ -4,12 +4,12 @@ import { nodeResolve } from "@rollup/plugin-node-resolve"
 import replace from '@rollup/plugin-replace'
 import alias from '@rollup/plugin-alias'
 import filesize from 'rollup-plugin-filesize'
+import commonjs from '@rollup/plugin-commonjs'
 import path from "path"
 
 const fileList = [
   "script/content.js",
   "script/background.js",
-  "script/options.js",
 ]
 const dir = "./src"
 const outputDir = `./dist`
@@ -34,7 +34,8 @@ const plugins = [
       "@": path.join(".", dir, `script`)
     }
   }),
-  filesize()
+  filesize(),
+  commonjs()
 ]
 
 if(process.env.NODE_ENV === "production") {

@@ -1,10 +1,10 @@
 {
 	"EXT_NAME" : {
-		"message" : "browser extension template",
+		"message" : "Pucci 14 Word",
 		"description" : "manifest name"
 	},
 	"EXT_DESC" : {
-		"message" : "browser extension template supported manifest v3",
+		"message" : "pucci 14 word browser extension",
 		"description" : "manifest description"
 	}
 }
