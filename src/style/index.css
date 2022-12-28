@@ -10,6 +10,15 @@
   opacity: 0;
 }
 
+.__pucci_14_word_cmoon {
+  top: none !important;
+  top: unset !important;
+  bottom: 0;
+  animation-name: __pucci_cmoon;
+  animation-duration: 1.6s;
+  opacity: 1;
+}
+
 .__pucci_14_word_last {
   transition: none !important;
   left: 50% !important;
@@ -28,4 +37,27 @@
   35%  {font-size: 120px;}
   70%  {font-size: 72px;}
   100% {font-size: 82px;}
+}
+
+@keyframes __pucci_cmoon {
+  0% {
+    transform: rotate(15deg);
+  }
+
+  5% {
+    transform: rotate(-15deg);
+  }
+
+  10% {
+    transform: rotate(10deg);
+  }
+
+  13% {
+    transform: rotate(-3deg);
+  }
+
+  100% {
+    bottom: 0;
+    top: unset;
+  }
 }

@@ -66,6 +66,16 @@ const getRandomPosition = (position=null) => {
   return position[Math.floor(Math.random() * position.length)]
 }
 
+const setCMoon = () => {
+  domList.forEach(dom => {
+    if (dom.classList.contains("__pucci_14_word_last")) {
+      return
+    }
+
+    dom.classList.add("__pucci_14_word_cmoon")
+  })
+}
+
 ;(async () => {
   const style = getStyle()
   document.head.appendChild(style)
@@ -98,6 +108,9 @@ const getRandomPosition = (position=null) => {
     document.body.appendChild(getWordDom(word, x, y, +i === words.length - 1))
     await sleep(757)
   }
+
+  await sleep(2000)
+  setCMoon()
 
   await sleep(5000)
   cleanDom()
