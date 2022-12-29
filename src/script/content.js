@@ -57,7 +57,7 @@ const cleanDom = () => {
 const getStyle = () => {
   const dom = document.createElement("link")
   dom.rel = "stylesheet"
-  dom.href = chrome.runtime.getURL("style/index.css")
+  dom.href = chrome.runtime.getURL("/style/index.css")
   return dom
 }
 
