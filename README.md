@@ -1,5 +1,7 @@
 # web-ext-pucci-14word
 
+![example](example/example.gif)
+
 ## Installation
 1. Clone the repository `git clone https://github.com/ckaznable/web-ext-pucci-14word.git`
 2. Run `npm install`
